@@ -1,31 +1,16 @@
-import { ChevronDownIcon } from '@chakra-ui/icons'
 import {
 	Box,
 	Button,
 	Flex,
-	HStack,
-	Center,
 	Stack,
 	Text,
-	Menu,
-	Avatar,
 } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
-import { RiDashboardLine, RiSearchLine, RiArrowDownSFill } from 'react-icons/ri'
-import { TiShoppingCart } from 'react-icons/ti'
-import { FiShoppingBag, FiSettings } from 'react-icons/fi'
 import { AiOutlineAppstore } from 'react-icons/ai'
-import { HiOutlineLogout } from 'react-icons/hi'
-import { BiCalendar, BiTimeFive, BiLogIn } from 'react-icons/bi'
-import { VscBellDot } from 'react-icons/vsc'
+import {  BiTimeFive, BiLogIn } from 'react-icons/bi'
 import { IoIosPeople } from 'react-icons/io'
-import { GrAppsRounded } from 'react-icons/gr'
 import {
-	Divider,
-	SimpleGrid,
 	VStack,
-	Wrap,
-	WrapItem,
 } from '@chakra-ui/layout'
 import { CartesianGrid, LineChart, XAxis } from 'recharts';
 import { Tooltip } from 'chart.js';
@@ -192,8 +177,8 @@ function Dashboard() {
 							<Flex p='4' borderRadius='lg' bg='gray.50' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
-										<VStack justifyContent='right'>
+										<IoIosPeople size='25' color='black'/>
+										<VStack justifyContent='right' color='black'>
 											<Text fontSize='xs' fontWeight='bold'>TOTAL STAFF</Text>
 											<Text fontWeight='bold'>106</Text>
 										</VStack>
@@ -204,8 +189,8 @@ function Dashboard() {
 							<Flex p='4' borderRadius='lg' bg='gray.50' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
-										<VStack justifyContent='right'>
+										<IoIosPeople size='25' color='black'/>
+										<VStack justifyContent='right' color='black'>
 											<Text fontSize='xs' fontWeight='bold'>STAFFS PRESENT</Text>
 											<Text fontWeight='bold'>65</Text>
 										</VStack>
@@ -215,8 +200,8 @@ function Dashboard() {
 							<Flex p='4' borderRadius='lg' bg='gray.50' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
-										<VStack justifyContent='right'>
+										<IoIosPeople color='black' size='25' />
+										<VStack justifyContent='right' color='black'>
 											<Text fontSize='xs' fontWeight='bold'>STAFFS ABSENT</Text>
 											<Text fontWeight='bold'>44</Text>
 										</VStack>
@@ -225,6 +210,7 @@ function Dashboard() {
 							</Flex>
 						</Flex>
 						<Box
+						mt='10'
 							w='100%'
 							border='1px'
 							borderRadius='lg'

@@ -159,10 +159,10 @@ function Attendance() {
 							<Flex p='4' borderRadius='lg' bg='#FFF5F4' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
+										<IoIosPeople size='25'  color='black'/>
 										<VStack justifyContent='right'>
-											<Text fontSize='xs' fontWeight='bold'>TOTAL STAFF</Text>
-											<Text fontWeight='bold'>106</Text>
+											<Text fontSize='xs' fontWeight='bold' color='black'>TOTAL STAFF</Text>
+											<Text fontWeight='bold' color='black'>106</Text>
 										</VStack>
 									</Flex>
 								</Stack>
@@ -171,10 +171,10 @@ function Attendance() {
 							<Flex p='4' borderRadius='lg' bg='#FFF5F4' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
+										<IoIosPeople size='25'  color='black'/>
 										<VStack justifyContent='right'>
-											<Text fontSize='xs' fontWeight='bold'>STAFFS PRESENT</Text>
-											<Text fontWeight='bold'>65</Text>
+											<Text fontSize='xs' fontWeight='bold'  color='black'>STAFFS PRESENT</Text>
+											<Text fontWeight='bold' color='black'>65</Text>
 										</VStack>
 									</Flex>
 								</Stack>
@@ -182,10 +182,10 @@ function Attendance() {
 							<Flex p='4' borderRadius='lg' bg='#FFF5F4' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' />
+										<IoIosPeople size='25'  color='black'/>
 										<VStack justifyContent='right'>
-											<Text fontSize='xs' fontWeight='bold'>STAFFS ABSENT</Text>
-											<Text fontWeight='bold'>44</Text>
+											<Text fontSize='xs' fontWeight='bold'  color='black'>STAFFS ABSENT</Text>
+											<Text fontWeight='bold'  color='black'>44</Text>
 										</VStack>
 									</Flex>
 								</Stack>
@@ -194,7 +194,7 @@ function Attendance() {
 						<HStack justifyContent='space-between' p='7'>
 							<HStack spacing='5'>
 								<Menu>
-									<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7' as={Button} rightIcon={<ChevronDownIcon />}>Actions</MenuButton>
+									<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7'  color='black' as={Button} rightIcon={<ChevronDownIcon />}>Actions</MenuButton>
 									<MenuList>
 										<MenuItem>Download</MenuItem>
 										<MenuItem>Create a Copy</MenuItem>
@@ -204,7 +204,7 @@ function Attendance() {
 									</MenuList>
 								</Menu>
 								<Menu>
-									<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7' as={Button} rightIcon={<ChevronDownIcon />}>Today</MenuButton>
+									<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7'  color='black' as={Button} rightIcon={<ChevronDownIcon />}>Today</MenuButton>
 									<MenuList>
 										<MenuItem>Download</MenuItem>
 										<MenuItem>Create a Copy</MenuItem>
@@ -215,7 +215,7 @@ function Attendance() {
 								</Menu>
 							</HStack>
 							<Menu>
-								<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7' as={Button} rightIcon={<ChevronDownIcon />}>Export Report</MenuButton>
+								<MenuButton h='7' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7'  color='black' as={Button} rightIcon={<ChevronDownIcon />}>Export Report</MenuButton>
 								<MenuList>
 									<MenuItem>Download</MenuItem>
 									<MenuItem>Create a Copy</MenuItem>
@@ -227,143 +227,249 @@ function Attendance() {
 						</HStack>
 
 						<Box pt='10' h='auto'>
-							<Wrap _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }}>
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
 									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
 										<Box>
-											<Text fontWeight='bold'>Dennis</Text>
-											<Text fontSize='xs' fontWeight='medium'>Web designer</Text>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
 										</Box>
 										<HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropDownFill size='32' />
+												<RiArrowDropDownFill size='32'  />
 												<Text>07:34</Text>
 											</HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropUpFill size='32' />
+												<RiArrowDropUpFill size='32'/>
 												<Text>16:26</Text>
 											</HStack>
 										</HStack>
 										<HStack>
-											<IoIosCall size='24' />
-											<IoIosMail size='24' />
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
 										</HStack>
 									</Flex>
 
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
-							<Wrap _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
-
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
 									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
 										<Box>
-											<Text fontWeight='bold'>Dennis</Text>
-											<Text fontSize='xs' fontWeight='medium'>Web designer</Text>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
 										</Box>
 										<HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropDownFill size='32' />
+												<RiArrowDropDownFill size='32'  />
 												<Text>07:34</Text>
 											</HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropUpFill size='32' />
+												<RiArrowDropUpFill size='32'/>
 												<Text>16:26</Text>
 											</HStack>
 										</HStack>
 										<HStack>
-											<IoIosCall size='24' />
-											<IoIosMail size='24' />
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
 										</HStack>
 									</Flex>
 
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
-							<Wrap _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
 									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
 										<Box>
-											<Text fontWeight='bold'>Dennis</Text>
-											<Text fontSize='xs' fontWeight='medium'>Web designer</Text>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
 										</Box>
 										<HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropDownFill size='32' />
+												<RiArrowDropDownFill size='32'  />
 												<Text>07:34</Text>
 											</HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropUpFill size='32' />
+												<RiArrowDropUpFill size='32'/>
 												<Text>16:26</Text>
 											</HStack>
 										</HStack>
 										<HStack>
-											<IoIosCall size='24' />
-											<IoIosMail size='24' />
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
 										</HStack>
 									</Flex>
 
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
-							<Wrap _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
 									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
 										<Box>
-											<Text fontWeight='bold'>Dennis</Text>
-											<Text fontSize='xs' fontWeight='medium'>Web designer</Text>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
 										</Box>
 										<HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropDownFill size='32' />
+												<RiArrowDropDownFill size='32'  />
 												<Text>07:34</Text>
 											</HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropUpFill size='32' />
+												<RiArrowDropUpFill size='32'/>
 												<Text>16:26</Text>
 											</HStack>
 										</HStack>
 										<HStack>
-											<IoIosCall size='24' />
-											<IoIosMail size='24' />
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
 										</HStack>
 									</Flex>
 
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
-							<Wrap _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
 									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
 										<Box>
-											<Text fontWeight='bold'>Dennis</Text>
-											<Text fontSize='xs' fontWeight='medium'>Web designer</Text>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
 										</Box>
 										<HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropDownFill size='32' />
+												<RiArrowDropDownFill size='32'  />
 												<Text>07:34</Text>
 											</HStack>
 											<HStack color='#A0DE3B'>
-												<RiArrowDropUpFill size='32' />
+												<RiArrowDropUpFill size='32'/>
 												<Text>16:26</Text>
 											</HStack>
 										</HStack>
 										<HStack>
-											<IoIosCall size='24' />
-											<IoIosMail size='24' />
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
 										</HStack>
 									</Flex>
 
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+								<WrapItem>
+									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
+										<Box>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
+										</Box>
+										<HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropDownFill size='32'  />
+												<Text>07:34</Text>
+											</HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropUpFill size='32'/>
+												<Text>16:26</Text>
+											</HStack>
+										</HStack>
+										<HStack>
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
+										</HStack>
+									</Flex>
 
+								</WrapItem>
+								<Divider pt='5' />
+							</Wrap>
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+								<WrapItem>
+									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
+										<Box>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
+										</Box>
+										<HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropDownFill size='32'  />
+												<Text>07:34</Text>
+											</HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropUpFill size='32'/>
+												<Text>16:26</Text>
+											</HStack>
+										</HStack>
+										<HStack>
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
+										</HStack>
+									</Flex>
+
+								</WrapItem>
+								<Divider pt='5' />
+							</Wrap>
+							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+								<WrapItem>
+									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
+										<Box>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
+										</Box>
+										<HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropDownFill size='32'  />
+												<Text>07:34</Text>
+											</HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropUpFill size='32'/>
+												<Text>16:26</Text>
+											</HStack>
+										</HStack>
+										<HStack>
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
+										</HStack>
+									</Flex>
+
+								</WrapItem>
+								<Divider pt='5' />
+							</Wrap>
+							<Wrap pt='5' borderTop='1px solid #edf2f7'_hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
+								<WrapItem>
+									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+									<Flex pl='5' justifyContent='space-between' w='900px' alignItems='center'>
+										<Box>
+											<Text fontWeight='bold'  color='black'>Dennis</Text>
+											<Text fontSize='xs' fontWeight='medium'  color='black'>Web designer</Text>
+										</Box>
+										<HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropDownFill size='32'  />
+												<Text>07:34</Text>
+											</HStack>
+											<HStack color='#A0DE3B'>
+												<RiArrowDropUpFill size='32'/>
+												<Text>16:26</Text>
+											</HStack>
+										</HStack>
+										<HStack>
+											<IoIosCall size='24'  color='black'/>
+											<IoIosMail size='24'  color='black'/>
+										</HStack>
+									</Flex>
+
+								</WrapItem>
+								<Divider pt='5' />
+							</Wrap>
 
 						</Box>
 					</Box>
