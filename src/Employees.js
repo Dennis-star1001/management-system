@@ -98,7 +98,7 @@ function Employees() {
 										</Flex>
 									</Button>
 								</Link>
-								<Link to="">
+								<Link to="/Login">
 									<Button
 										w='40'
 										pl='2'
@@ -132,7 +132,7 @@ function Employees() {
 
 				<Box bg='#97211D' h='200vh' pt='5' overflow='hidden'>
 					<Flex alignItems='center' justifyContent='space-between'>
-						<Text mt='10' color='white' fontSize='2xl' fontWeight='bold'>
+						<Text mt='10' ml='300px' pb='10' color='white' fontSize='2xl' fontWeight='bold'>
 							EMPLOYEES
 						</Text>
 
@@ -147,7 +147,7 @@ function Employees() {
 										<MenuButton h='7' color='black' bg='none' _hover={{ bg: 'none' }} border='2px solid #EDF2F7' as={Button} rightIcon={<ChevronDownIcon />}>
 											<Flex alignItems='center'>
 												<BsPeople />All
-										</Flex>
+											</Flex>
 										</MenuButton>
 
 										<MenuList>
@@ -194,7 +194,7 @@ function Employees() {
 
 								</HStack>
 
-								<Wrap pt='5' borderTop='1px solid #edf2f7'>
+								<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', borderRadius:'xl', bg: '#FFF5F4' }}>
 									<Divider />
 									<WrapItem>
 										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
@@ -206,185 +206,22 @@ function Employees() {
 											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
 
 											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
+												<IoIosCall size='24' color='black' />
+												<IoIosMail size='24' color='black' />
 											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
+											<Link to='/popup'>
+												<Button>
+													<HStack>
+														<BsThreeDots size='24' color='black' />
+													</HStack>
+												</Button>
+											</Link>
 										</HStack>
 
 									</WrapItem>
-									<Divider pt='5'/>
+									<Divider pt='5' />
 								</Wrap>
-								<Wrap pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
 
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap  pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap  pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap  pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap  pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
-								<Wrap  pt='5' borderTop='1px solid #edf2f7'>
-									<Divider />
-									<WrapItem>
-										<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-										<HStack pl='10' spacing='40' justifyContent='space-around' w='800px' alignItems='center'>
-											<Box>
-												<Text fontWeight='bold' color='black'>Dennis</Text>
-
-											</Box>
-											<Text fontSize='xs' fontWeight='medium' color='black'>Web designer</Text>
-
-											<HStack ml='20'>
-												<IoIosCall size='24' color='black'/>
-												<IoIosMail size='24' color='black'/>
-											</HStack>
-											<HStack>
-												<BsThreeDots size='24' color='black'/>
-											</HStack>
-										</HStack>
-
-									</WrapItem>
-									<Divider pt='5'/>
-								</Wrap>
-								
 
 							</Box>
 						</Box>

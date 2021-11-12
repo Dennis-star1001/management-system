@@ -7,57 +7,13 @@ import {
 } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import { AiOutlineAppstore } from 'react-icons/ai'
-import {  BiTimeFive, BiLogIn } from 'react-icons/bi'
+import { BiTimeFive, BiLogIn } from 'react-icons/bi'
 import { IoIosPeople } from 'react-icons/io'
 import {
 	VStack,
 } from '@chakra-ui/layout'
-import { CartesianGrid, LineChart, XAxis } from 'recharts';
-import { Tooltip } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+
 function Dashboard() {
-	const data = [
-		{
-			name: 'food',
-			uv: -2000,
-			pv: -2013,
-			amt: -4500,
-			bmk: -4301,
-			time: 1,
-			uvError: [100, 50],
-			pvError: [110, 20],
-		},
-		{
-			name: 'cosmetic',
-			uv: 3300,
-			pv: 2000,
-			amt: 6500,
-			bmk: 2000,
-			time: 2,
-			uvError: 120,
-			pvError: 50,
-		},
-		{
-			name: 'storage',
-			uv: 3200,
-			pv: 1398,
-			amt: 5000,
-			bmk: 3000,
-			time: 3,
-			uvError: [120, 80],
-			pvError: [200, 100],
-		},
-		{
-			name: 'digital',
-			uv: 2800,
-			pv: 2800,
-			amt: 4000,
-			bmk: 1500,
-			time: 4,
-			uvError: 100,
-			pvError: 30,
-		},
-	]
 
 	return (
 
@@ -88,7 +44,7 @@ function Dashboard() {
 										<AiOutlineAppstore size='20' />
 										<Text ml='2' fontSize='md'>
 											Dashboard
-											</Text>
+										</Text>
 									</Flex>
 								</Button>
 							</Link>
@@ -109,7 +65,7 @@ function Dashboard() {
 										<IoIosPeople size='20' />
 										<Text ml='2' fontSize='md'>
 											Employees
-											</Text>
+										</Text>
 									</Flex>
 								</Button>
 							</Link>
@@ -130,11 +86,11 @@ function Dashboard() {
 										<BiTimeFive size='20' />
 										<Text ml='2' fontSize='md'>
 											Attendance
-											</Text>
+										</Text>
 									</Flex>
 								</Button>
 							</Link>
-							<Link to="">
+							<Link to="/Login">
 								<Button
 									w='40'
 									pl='2'
@@ -151,7 +107,7 @@ function Dashboard() {
 										<BiLogIn size='20' />
 										<Text ml='2' fontSize='md'>
 											Logout
-											</Text>
+										</Text>
 									</Flex>
 								</Button>
 							</Link>
@@ -168,7 +124,7 @@ function Dashboard() {
 				<Flex alignItems='center' justifyContent='space-between'>
 					<Text fontSize='xl' color='white' fontWeight='bold'>
 						Dashboard
-						</Text>
+					</Text>
 
 				</Flex>
 				<Flex mt='14' justifyContent='space-between'>
@@ -177,7 +133,7 @@ function Dashboard() {
 							<Flex p='4' borderRadius='lg' bg='gray.50' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' color='black'/>
+										<IoIosPeople size='25' color='black' />
 										<VStack justifyContent='right' color='black'>
 											<Text fontSize='xs' fontWeight='bold'>TOTAL STAFF</Text>
 											<Text fontWeight='bold'>106</Text>
@@ -189,7 +145,7 @@ function Dashboard() {
 							<Flex p='4' borderRadius='lg' bg='gray.50' h='100%' w='52'>
 								<Stack spacing='4' w='100%'>
 									<Flex justifyContent='space-between'>
-										<IoIosPeople size='25' color='black'/>
+										<IoIosPeople size='25' color='black' />
 										<VStack justifyContent='right' color='black'>
 											<Text fontSize='xs' fontWeight='bold'>STAFFS PRESENT</Text>
 											<Text fontWeight='bold'>65</Text>
@@ -209,42 +165,15 @@ function Dashboard() {
 								</Stack>
 							</Flex>
 						</Flex>
-						<Box
-						mt='10'
-							w='100%'
-							border='1px'
-							borderRadius='lg'
-							borderColor='gray.300'
-							bg='White'
-						>
 
-							<LineChart
-								width={500}
-								height={400}
-								data={data}
-								margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-								<XAxis dataKey='name' />
-								<Tooltip />
-								<CartesianGrid stroke='#f5f5f5' />
-								<Line
-									type='monotone'
-									dataKey='uv'
-									stroke='#ff7300'
-									yAxisId={0}
-								/>
-								<Line
-									type='monotone'
-									dataKey='pv'
-									stroke='#387908'
-									yAxisId={1}
-								/>
-							</LineChart>
-						</Box>
 					</Box>
 
 				</Flex>
-			</Box>
+				<Box>
 
+				</Box>
+			</Box>
+		
 		</Flex>
 
 	)

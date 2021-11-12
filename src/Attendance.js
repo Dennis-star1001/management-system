@@ -4,7 +4,6 @@ import {
 	Button,
 	Flex,
 	HStack,
-	Center,
 	Stack,
 	Text,
 	Menu,
@@ -12,24 +11,10 @@ import {
 	MenuButton,
 	MenuList,
 	MenuItem,
-	Input,
-	FormLabel,
-	FormControl,
 } from '@chakra-ui/react'
-import {
-	Modal,
-	ModalOverlay,
-	ModalContent,
-	ModalHeader,
-	ModalFooter,
-	ModalBody,
-	ModalCloseButton,
-} from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
-import { RiDashboardLine, RiArrowDropUpFill, RiArrowDropDownFill } from 'react-icons/ri'
-import { HiOutlineLogout } from 'react-icons/hi'
-import { BiCalendar, BiTimeFive, BiLogIn } from 'react-icons/bi'
-import { VscBellDot } from 'react-icons/vsc'
+import { RiArrowDropUpFill, RiArrowDropDownFill } from 'react-icons/ri'
+import {  BiTimeFive, BiLogIn } from 'react-icons/bi'
 import { IoIosPeople, IoIosCall, IoIosMail } from 'react-icons/io'
 import { AiOutlineAppstore } from 'react-icons/ai'
 import {
@@ -114,7 +99,7 @@ function Attendance() {
 									</Flex>
 								</Button>
 							</Link>
-							<Link to="">
+							<Link to="/Login">
 								<Button
 									w='40'
 									pl='2'
@@ -148,12 +133,12 @@ function Attendance() {
 
 			<Box bg='#97211D' pt='5' h='auto' overflow='hidden'>
 				<Flex alignItems='center' justifyContent='space-between'>
-					<Text fontSize='xl' color='white' fontWeight='bold' bg='black' w='2000'>
-						Dashboard
+				<Text mt='10' ml='300px' pb='10' color='white' fontSize='2xl' fontWeight='bold'>
+							DASHBOARD
 						</Text>
 
 				</Flex>
-				<Flex ml='400' mt='14' justifyContent='center'>
+				<Flex ml='400' justifyContent='center'>
 					<Box ml='10' w='200%' bg='white' mr='52' p='5' borderRadius='xl' >
 						<Flex justifyContent='space-around'>
 							<Flex p='4' borderRadius='lg' bg='#FFF5F4' h='100%' w='52'>
@@ -227,6 +212,7 @@ function Attendance() {
 						</HStack>
 
 						<Box pt='10' h='auto'>
+							
 							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }}>
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
@@ -254,6 +240,7 @@ function Attendance() {
 								</WrapItem>
 								<Divider pt='5' />
 							</Wrap>
+						
 							<Wrap pt='5' borderTop='1px solid #edf2f7' _hover={{ cursor: 'pointer', bg: '#FFF5F4' }} >
 								<WrapItem>
 									<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />

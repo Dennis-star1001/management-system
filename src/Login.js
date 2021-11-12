@@ -23,7 +23,7 @@ function Login() {
                             <Input borderRadius='none' fontSize='sm' borderBottom='1px solid white' border='none' type="text" placeholder="Username" />
                         </InputGroup>
 
-                        <InputGroup w='48'>
+                        <InputGroup w='48' color='white'>
 
                             <InputLeftElement
                                 pointerEvents="none"
@@ -33,13 +33,13 @@ function Login() {
 
 
                             />
-                            <InputRightElement
+                            {/* <InputRightElement
                                 pointerEvents="none"
                                 Icon mt='3' h='5' color='white' as={BsFillEyeSlashFill}
 
 
 
-                            />
+                            /> */}
 
                             <Input borderRadius='none' fontSize='sm' borderBottom='1px solid white' border='none' type="password" placeholder="Password" />
                         </InputGroup>

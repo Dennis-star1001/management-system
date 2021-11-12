@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.main-svg{
+  background-image: url("https://www.figma.com/file/ImA8IcWmzkEWTdKYRYyMw5/JoshStan---Hybrid-Attendance-System?node-id=11%3A580");
+  }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
