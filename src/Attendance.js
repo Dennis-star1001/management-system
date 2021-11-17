@@ -99,7 +99,7 @@ function Attendance() {
 									</Flex>
 								</Button>
 							</Link>
-							<Link to="/Login">
+							<Link to="/">
 								<Button
 									w='40'
 									pl='2'
@@ -134,7 +134,7 @@ function Attendance() {
 			<Box bg='#97211D' pt='5' h='auto' overflow='hidden'>
 				<Flex alignItems='center' justifyContent='space-between'>
 				<Text mt='10' ml='300px' pb='10' color='white' fontSize='2xl' fontWeight='bold'>
-							DASHBOARD
+							ATTENDANCE
 						</Text>
 
 				</Flex>

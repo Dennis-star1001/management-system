@@ -98,7 +98,7 @@ function Employees() {
 										</Flex>
 									</Button>
 								</Link>
-								<Link to="/Login">
+								<Link to="/">
 									<Button
 										w='40'
 										pl='2'

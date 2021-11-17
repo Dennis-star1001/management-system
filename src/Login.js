@@ -45,7 +45,7 @@ function Login() {
                         </InputGroup>
                         <VStack justifyContent='center' pt='5'>
                             <Link to='/Dashboard'>
-                                <Button bg='white' w='48' color='#97211D' >LOGIN</Button>
+                                <Button bg='white' w='48' color='#97211D' _hover={{color:'white', bg: 'none', border: '1px solid white'}} >LOGIN</Button>
                             </Link>
                             <Button bg='none' h='2' _hover={{ bg: 'none' }} color='white' fontWeight='thin' fontSize='xx-small'>FORGET PASSWORD</Button>
                         </VStack>

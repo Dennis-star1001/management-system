@@ -12,8 +12,7 @@ function App() {
     <Router>
       <Box>
         <Switch>
-          <Route path='/' exact component={Home}/>
-          <Route path='/Login' exact component={Login}/>
+          <Route path='/' exact component={Login}/>
           <Route path='/Dashboard' component={Dashboard}/>
           <Route path='/Attendance' component={Attendance}/>
           <Route path='/Employees' component={Employees}/>
